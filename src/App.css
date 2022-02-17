@@ -1,7 +1,46 @@
+* {
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+
+.card-container {
+  margin: 1.0rem;
+  padding: 0.5rem;
+  background-color: wheat;
+}
+
+.card {margin: 3rem;}
+.card .title {
+  color: white;
+  background-color: rgb(109, 46, 60);
+  border:3px rgb(51, 30, 46) solid;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+.card .title h1{text-align: center}
+.card .title h3{text-align: end}
+.card .body {
+  background-color: white;
+  border: 3px grey solid;
+  border-top: none;
+  border-radius: 0 0 10px 10px; 
+}
+.card .body p {
+  padding: 1.5rem;
+  text-align: justify;
+  text-indent: 5rem;
+
+}
+/*  */
 .App {
   text-align: center;
 }
-
+ 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
