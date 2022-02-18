@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
 const posts = [
@@ -21,13 +20,13 @@ const posts = [
 ]
 
 function App() {
-  // const [state, setState] = useState(posts);
+  const [counter, setCounter] = useState(0);
 
   return (
-    <div className="App">
+    <div className="Home">
       <h1>Hi</h1>
+      
       <div className='card-container'>
-        
           {posts.map(post => {
             console.log(post);    
               return(
@@ -42,23 +41,13 @@ function App() {
                 </div>
               );
           })}
-
       </div>
-      {/* <div className='card-container'> 
-        <div className='card'>
-          <h1>Card title</h1>
-          <p>Non culpa fugiat aliquip exercitation cupidatat est Lorem. Mollit adipisicing ullamco magna mollit amet et nostrud ut nulla amet sit. Reprehenderit mollit pariatur consequat exercitation aute amet sunt amet. Irure esse fugiat nisi ad labore adipisicing commodo. Cupidatat excepteur minim labore duis consectetur excepteur magna ut et duis.</p>
-        </div>
-        <div className='card'>
-          <h1>Card title</h1>
-          <p>Non culpa fugiat aliquip exercitation cupidatat est Lorem. Mollit adipisicing ullamco magna mollit amet et nostrud ut nulla amet sit. Reprehenderit mollit pariatur consequat exercitation aute amet sunt amet. Irure esse fugiat nisi ad labore adipisicing commodo. Cupidatat excepteur minim labore duis consectetur excepteur magna ut et duis.</p>
-        </div>
-        <div className='card'>
-          <h1>Card title</h1>
-          <p>Non culpa fugiat aliquip exercitation cupidatat est Lorem. Mollit adipisicing ullamco magna mollit amet et nostrud ut nulla amet sit. Reprehenderit mollit pariatur consequat exercitation aute amet sunt amet. Irure esse fugiat nisi ad labore adipisicing commodo. Cupidatat excepteur minim labore duis consectetur excepteur magna ut et duis.</p>
-        </div>
-      </div> */}
-
+      
+      <div className='button-container'>
+        <button className='add-post'>
+          Add Posts
+        </button>
+      </div>
     </div>
   );
 }
